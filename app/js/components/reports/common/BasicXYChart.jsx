@@ -1,5 +1,5 @@
+import Chart from 'chart.js';
 import Line from 'react-chartjs';
-import Chart from 'chart';
 import React, { Component, PropTypes } from 'react';
 import { ApiHelper } from '../../../helpers/apiHelper';
 import * as ReportConstants from '../../../helpers/ReportConstants';
@@ -168,8 +168,8 @@ class BasicXYChart extends Component {
 BasicXYChart.propTypes = {
   reportParameters: PropTypes.object.isRequired,
   fetchData: PropTypes.object.isRequired,
-  X_label: PropTypes.number.isRequired,
-  Y_label: PropTypes.number.isRequired,
+  X_label: PropTypes.string.isRequired,
+  Y_label: PropTypes.string.isRequired,
   reportUUID: PropTypes.string.isRequired,
   limit: PropTypes.number.isRequired
 };
