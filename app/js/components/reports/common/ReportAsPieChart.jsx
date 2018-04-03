@@ -152,7 +152,7 @@ ReportAsPieChart.propTypes = {
   reportParameters: PropTypes.object.isRequired,
   fetchData: PropTypes.object.isRequired,
   labels: PropTypes.string.isRequired,
-  qty: PropTypes.number.isRequired,
+  qty: PropTypes.string.isRequired,
   reportUUID: PropTypes.string.isRequired,
   limit: PropTypes.number.isRequired
 };
